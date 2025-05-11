@@ -21,3 +21,10 @@ int1 = 32
 float1 = 80.1123
 print("I'am %s, age %d, weight %.2f" % (str1, int1, float1))
 
+# format
+print('Hello, {0}, 成绩提升了 {1:.1f}%'.format('小明', 17.125))
+
+# f-string
+r = 2.5
+s = 3.14 * r ** 2
+print(f'The area of a circle with radius {r} is {s:.2f}')
