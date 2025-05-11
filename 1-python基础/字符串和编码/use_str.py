@@ -14,5 +14,10 @@ print(f"str:{str}的编码结果为:{res}")
 b_res = res.decode('utf-8')
 print(f"bytes:{res}的解码结果为:{b_res}")
 
-
+# 格式化
+# %s,%d,%f
+str1 = "Aiolos"
+int1 = 32
+float1 = 80.1123
+print("I'am %s, age %d, weight %.2f" % (str1, int1, float1))
 
