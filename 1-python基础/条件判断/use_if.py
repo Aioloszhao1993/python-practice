@@ -93,3 +93,14 @@ print(a is b)  # True（a 和 b 指向同一对象）
 # Python 中以下值会被视为 False：0、空字符串 ""、空列表 []、空字典 {}、None
 if []:  # 空列表视为 False
     print("不会执行")
+
+# 6.扩展：match 语句（Python 3.10+）
+# match 语句用于模式匹配，替代复杂的 if-elif-else 结构：
+status = "success"
+match status:
+    case "success":
+        print("操作成功")
+    case "error":
+        print("发生错误")
+    case _:
+        print("未知状态")
